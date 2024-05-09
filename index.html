@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DeCode</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <textarea id="editor"></textarea>
+        <header>
+            <h6>
+                de(ode by Sam Ash
+            </h6>
+        </header>
+        <h1>
+            Let's learn to ground our designs in Practicality
+        </h1>
+
+
+        <h3>
+            1. Select a Design Component:
+        </h3>
+        <form class="components" id="componentID">
+            <div class="buttonBox">
+              <div class="buttonSelect">
+                    <input type="radio" id="button" name="comp" value="button">
+                    <label for="button">Button</label>
+              </div>
+              <br>
+              <button id="btn">Button</button>
+
+            </div>
+            
+            <div class="cardBox">
+                <div class="cardSelect">
+                    <input type="radio" id="card" name="comp" value="card">
+                    <label for="card">Card</label>
+                </div>
+                <br>
+                <div id="crd">
+                    <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/example.png?v=1715145124387">
+                    <h2>Card Title</h2>  
+                    <p>This is the description of the card. It gives you some basic details about the card.</p>
+                    <button id="cardButton">Action</button>
+                </div>
+            </div>
+            
+            <div class="dropdownBox">
+                <div class="dropdownSelect">
+                    <input type="radio" id="dropdown" name="comp" value="dropdown">
+                    <label for="dropdown">Dropdown</label>
+                </div>
+                <br>
+                <div id="drp">
+                    <select id="cars" name="cars">
+                        <option value="option1">Option1</option>
+                        <option value="option2">Option2</option>
+                        <option value="option3">Option3</option>
+                        <option value="option4">Option4</option>
+                      </select>
+                </div>
+            </div>
+          </form>
+        <br>
+
+        <h3>
+            2. Select a Design System:
+        </h3>
+
+        <form class="systems" id="systemID">
+            <div class="mdesignBox">
+              <div class="mdesignSelect">
+                    <input type="radio" id="mdesign" name="sys" value="mdesign">
+                    <label for="mdesign">Material Design</label><br>
+              </div>
+              <br>
+              <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/material.png?v=1715145765691" width="200px">
+            </div>
+            
+            <div class="bootBox">
+                <div class="bootSelect">
+                    <input type="radio" id="bootstrap" name="sys" value="bootstrap">
+                    <label for="bootstrap">Bootstrap</label><br>
+                </div>
+                <br>
+                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/boot.png?v=1715145927259" width="200px">
+            </div>
+
+            <div class="appleBox">
+                <div class="appleSelect">
+                    <input type="radio" id="apple" name="sys" value="apple">
+                    <label for="apple">Apple</label>
+                </div>
+                <br>
+                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/apple.png?v=1715145697199" width="200px">
+            </div>
+        </form>
+        <br>
+        <br>
+
+        <h3>
+            The results will appear here:
+        </h3>
+        <div class="results" id="selected-color">
+
+              <div id="editorButton"><button class="noshowButton" id="ButtonCheck">
+                Button
+              </button>
+          </div>
+            <div class="noshowCard"  id="CardCheck">
+                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/example.png?v=1715145124387">
+                <h2>Card Title</h2>  
+                <p>This is the description of the card. It gives you some basic details about the card.</p>
+                <button>Action</button>
+            </div>
+            
+                <select class="noshowDrop" id="DropCheck">
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                </select>
+            <br>
+            
+        </div>
+        <br>
+      <div class="colourSelect">
+                <p>
+              Change Background Color:
+              </p>
+              <input type="color" id="color-picker">
+
+            </div>
+        
+      
+      <div class="pallete">
+            <button id="newPallete">New Pallete</button>
+            <div class="colours">
+                <div>
+                    <h4 class="hex">#1234</h4>
+                    <div class="colour"></div>
+                </div>
+                <div>
+                    <h4 class="hex">#1234</h4>
+                    <div class="colour"></div>
+                </div>
+                <div>
+                    <h4 class="hex">#1234</h4>
+                    <div class="colour"></div>
+                </div>
+                <div>
+                    <h4 class="hex">#1234</h4>
+                    <div class="colour"></div>
+                </div>
+            </div>
+        </div>
+      <script src="script.js"></script>
+    </body>
+</html>

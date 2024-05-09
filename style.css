@@ -1,0 +1,277 @@
+body {
+    background-color: #F3EACB;
+    margin: 0% 10%;
+    font-family: "Work Sans", sans-serif;
+}
+
+h1{
+    color: #104156; 
+    font-size: 4.2em;
+}
+
+h3{
+    margin-top: 12%;
+    color: #092531;
+    font-size: 1.4em;
+}
+
+h6{
+    color: #104156; 
+    font-size: 1em;
+}
+
+.components {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.buttonBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    min-width: 80px;
+}
+
+.cardBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;   
+    min-width: 80px; 
+}
+
+.dropdownBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;  
+}
+
+.buttonSelect {
+    display: flex;
+    align-items: center;
+}
+
+.cardSelect {
+    display: flex;
+    align-items: center;
+}
+
+.dropdownSelect {
+    display: flex;
+    align-items: center;
+}
+
+.systems {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.mdesignBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px; 
+}
+
+.bootBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;    
+}
+
+.appleBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;   
+}
+
+.mdesignSelect {
+    display: flex;
+    align-items: center;
+}
+
+.bootSelect {
+    display: flex;
+    align-items: center;
+}
+
+.appleSelect {
+    display: flex;
+    align-items: center;
+}
+
+#btn {
+    width: 200px;
+    padding: 20px 40px;
+}
+
+#crd {
+    max-width: 300px;
+    padding: 20px;
+    outline: solid 1px black;
+}
+
+#cars {
+  padding: 20px 40px;
+}
+
+.showButton {
+    display: flex;
+    width: 200px;
+  justify-content: center;
+}
+
+
+.showCard {
+    display: flex;
+    width: 400px;
+}
+
+.showDrop {
+    display: flex;
+    width: 200px;
+}
+
+.noshowButton {
+    display: none;
+}
+
+.noshowCard {
+    display: none;
+}
+
+.noshowDrop {
+    display: none;
+}
+
+.results {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12%;
+    margin-left: 4%;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.Material {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 40px;
+    background: var(--M3-sys-light-primary, #6750A4);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+.Bootstrap {
+    flex-direction: column;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 6px;
+    background: var(---Status-Color-Danger, #DC3545);
+    color: #ffffff;
+    font-family: "Raleway";
+  font-weight: 600;
+}
+
+.Apple {
+    flex-direction: column;
+    padding: 13px 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Default-SystemBlue-Dark, #0A84FF);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+.pallete body {
+    background-color: #f1f1f1;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.pallete button {
+    border: none;
+    padding: 12px 24px;
+    position: absolute;
+    top: -16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #F3EACB;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pallete button:hover {
+    color: #F3EACB;
+    background-color: #1A23B2;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+
+.pallete {
+    position: relative;
+    background-color: #ffffff;
+    width: 80vw;
+    height: 25vh;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5em;
+  margin-bottom: 12vh;
+}
+
+.colours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.colours > div {
+    width: 25%;
+}
+
+.colour{
+    background-color: #333333;
+    height: 20vh;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
+}
+
+
+@media screen and (max-width: 500px) {
+    body { padding: 2em; }
+    .pallete { height: initial;}
+    .colours { flex-direction: column; }
+    .colours > div { width: 100%; }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
