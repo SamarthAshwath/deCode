@@ -1,7 +1,12 @@
 body {
     background-color: #F3EACB;
-    margin: 0% 10%;
+    margin: 0% 20%;
     font-family: "Work Sans", sans-serif;
+}
+
+p {
+    color: #092531;
+    font-size: 1.2em;
 }
 
 h1{
@@ -11,8 +16,8 @@ h1{
 
 h3{
     margin-top: 12%;
-    color: #092531;
-    font-size: 1.4em;
+    color: #104156;
+    font-size: 1.8em;
 }
 
 h6{
@@ -22,10 +27,13 @@ h6{
 
 .components {
     display: flex;
+    padding: 0px 40px;
     flex-direction: row;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 40px;
     flex-wrap: wrap;
+    min-width: 200px;
 }
 
 .buttonBox {
@@ -69,14 +77,15 @@ h6{
 
 .systems {
     display: flex;
+    padding: 0px 40px;
     flex-direction: row;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
 .mdesignBox {
-    margin: 4%;
     display: flex;
     align-items: left;
     flex-direction: column; 
@@ -84,7 +93,6 @@ h6{
 }
 
 .bootBox {
-    margin: 4%;
     display: flex;
     align-items: left;
     flex-direction: column; 
@@ -92,7 +100,6 @@ h6{
 }
 
 .appleBox {
-    margin: 4%;
     display: flex;
     align-items: left;
     flex-direction: column; 
@@ -115,18 +122,16 @@ h6{
 }
 
 #btn {
-    width: 200px;
-    padding: 20px 40px;
+    margin-left: 40px;
 }
 
 #crd {
     max-width: 300px;
-    padding: 20px;
-    outline: solid 1px black;
+    margin-left: 40px;
 }
 
 #cars {
-  padding: 20px 40px;
+  margin-left: 40px;
 }
 
 .showButton {
@@ -160,9 +165,8 @@ h6{
 
 .results {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 12%;
-    margin-left: 4%;
     padding: 40px;
     border-radius: 12px;
 }
@@ -178,35 +182,41 @@ h6{
     font-family: "Roboto", sans-serif;
 }
 
+
+
 .Bootstrap {
     flex-direction: column;
     padding: 16px 24px;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
     border-radius: 6px;
     background: var(---Status-Color-Danger, #DC3545);
     color: #ffffff;
     font-family: "Raleway";
-  font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 2px 4px 5px 1px rgba(48, 48, 48, 0.2);
 }
 
 .Apple {
     flex-direction: column;
     padding: 13px 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     border-radius: 10px;
     background: var(--Default-SystemBlue-Dark, #0A84FF);
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    border: none;
 }
 
 .pallete body {
     background-color: #f1f1f1;
     min-height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-family: "Work Sans", sans-serif;
 }
@@ -214,9 +224,9 @@ h6{
 .pallete button {
     border: none;
     padding: 12px 24px;
-    position: absolute;
-    top: -16px;
-    border-radius: 4px;
+    position: relative;
+    top: -40px;
+    border-radius: 12px;
     background-color: #007bff;
     color: #F3EACB;
     font-weight: 600;
@@ -230,19 +240,17 @@ h6{
 }
 
 .pallete {
-    position: relative;
     background-color: #ffffff;
-    width: 80vw;
+    width: 100%;
     height: 25vh;
     border-radius: 20px;
     text-align: center;
     padding-top: 5em;
-  margin-bottom: 12vh;
+    margin-bottom: 12vh;
 }
 
 .colours {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     overflow-y: hidden;
     height: 100%;
@@ -275,3 +283,75 @@ h6{
 @keyframes fadeIn {
     to { opacity: 1; }
 }
+
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 12vh;
+}
+
+#bridge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 12vh 0vh;
+}
+
+.colourSelect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.colourButton {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.htmlWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+textarea {
+    height: 15vh;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 2px #1A23B2;
+    background-color: #F3EACB;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+label {
+    font-size: 1.2em;
+    font-family: "Work-sans", sans-serif;
+    color: #092531;
+    font-weight: 300;
+}
+
+.htmlColor {
+    color: #0074D9;
+}
+
+.cssColor {
+    color: #00B140;
+}
+

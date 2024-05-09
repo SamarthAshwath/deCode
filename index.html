@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DeCode</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <header>
-            <h6>
-                de(ode by Sam Ash
-            </h6>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link href="codemirror/lib/codemirror.css" rel="stylesheet" />
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <link href="codemirror/theme/3024-day.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h6>
+            de(ode by Sam Ash
+        </h6>
+    </header>
+    <div id="bridge">
+        <img src="design.png" width="80px" height="80px">
         <h1>
-            Let's learn to ground our designs in Practicality
+            Bridge the gap between you and your developer.
         </h1>
+        <img src="develop.png" width="90px" height="90px">
+    </div>
 
 
-        <h3>
-            1. Select a Design Component:
-        </h3>
+    <h3 class="htmlColor">
+        HTML behaves as the building blocks of your website.
+    </h3>
+    <p style="color: #101670;">
+        Let's learn what HTML is.
+        <br>
+        HTML is the backbone of your webpage. It communicates with your browser to invoke basic elements of design. This
+        includes-
+        <br>
+    <ul style="color: #101670;">
+        <li>Text - Headings(h1, h2, h3, h4, etc.), Lists(like this one!)</li>
+        <li>Input - Buttons, Dropdowns, Radio Buttons.</li>
+        <li>Media - Images, Videos</li>
+    </ul>
+</p>
+    <br>
+    <p>Let's take a look at how these Ui Components are coded.</p>    
+    <br>
+
+    
+
+    <div class="htmlWrap">
+
         <form class="components" id="componentID">
             <div class="buttonBox">
-              <div class="buttonSelect">
+                <div class="buttonSelect">
                     <input type="radio" id="button" name="comp" value="button">
                     <label for="button">Button</label>
-              </div>
-              <br>
-              <button id="btn">Button</button>
-
-            </div>
-            
-            <div class="cardBox">
-                <div class="cardSelect">
-                    <input type="radio" id="card" name="comp" value="card">
-                    <label for="card">Card</label>
                 </div>
                 <br>
-                <div id="crd">
-                    <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/example.png?v=1715145124387">
-                    <h2>Card Title</h2>  
-                    <p>This is the description of the card. It gives you some basic details about the card.</p>
-                    <button id="cardButton">Action</button>
-                </div>
+                <button id="btn">Button</button>
+
             </div>
-            
+
             <div class="dropdownBox">
                 <div class="dropdownSelect">
                     <input type="radio" id="dropdown" name="comp" value="dropdown">
@@ -61,103 +77,138 @@
                         <option value="option2">Option2</option>
                         <option value="option3">Option3</option>
                         <option value="option4">Option4</option>
-                      </select>
+                    </select>
                 </div>
             </div>
-          </form>
-        <br>
 
-        <h3>
-            2. Select a Design System:
-        </h3>
 
-        <form class="systems" id="systemID">
-            <div class="mdesignBox">
-              <div class="mdesignSelect">
-                    <input type="radio" id="mdesign" name="sys" value="mdesign">
-                    <label for="mdesign">Material Design</label><br>
-              </div>
-              <br>
-              <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/material.png?v=1715145765691" width="200px">
-            </div>
-            
-            <div class="bootBox">
-                <div class="bootSelect">
-                    <input type="radio" id="bootstrap" name="sys" value="bootstrap">
-                    <label for="bootstrap">Bootstrap</label><br>
+            <div class="cardBox">
+                <div class="cardSelect">
+                    <input type="radio" id="card" name="comp" value="card">
+                    <label for="card">Card</label>
                 </div>
                 <br>
-                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/boot.png?v=1715145927259" width="200px">
-            </div>
-
-            <div class="appleBox">
-                <div class="appleSelect">
-                    <input type="radio" id="apple" name="sys" value="apple">
-                    <label for="apple">Apple</label>
+                <div id="crd">
+                    <!-- <img src="example.png"> -->
+                    <h2>Card Title</h2>
+                    <p>This is the description of the card. It gives you some basic details about the card.</p>
+                    <button id="cardButton">Action</button>
                 </div>
-                <br>
-                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/apple.png?v=1715145697199" width="200px">
             </div>
         </form>
-        <br>
-        <br>
-
-        <h3>
-            The results will appear here:
-        </h3>
-        <div class="results" id="selected-color">
-
-              <div id="editorButton"><button class="noshowButton" id="ButtonCheck">
-                Button
-              </button>
-          </div>
-            <div class="noshowCard"  id="CardCheck">
-                <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/example.png?v=1715145124387">
-                <h2>Card Title</h2>  
-                <p>This is the description of the card. It gives you some basic details about the card.</p>
-                <button>Action</button>
-            </div>
-            
-                <select class="noshowDrop" id="DropCheck">
-                    <option value="option1">Option1</option>
-                    <option value="option2">Option2</option>
-                    <option value="option3">Option3</option>
-                </select>
-            <br>
-            
-        </div>
-        <br>
-      <div class="colourSelect">
-                <p>
-              Change Background Color:
-              </p>
-              <input type="color" id="color-picker">
-
-            </div>
-        
         <textarea id="editor"></textarea>
+    </div>
 
-      <div class="pallete">
-            <button id="newPallete">New Pallete</button>
-            <div class="colours">
-                <div>
-                    <h4 class="hex">#1234</h4>
-                    <div class="colour"></div>
-                </div>
-                <div>
-                    <h4 class="hex">#1234</h4>
-                    <div class="colour"></div>
-                </div>
-                <div>
-                    <h4 class="hex">#1234</h4>
-                    <div class="colour"></div>
-                </div>
-                <div>
-                    <h4 class="hex">#1234</h4>
-                    <div class="colour"></div>
-                </div>
+    <br>
+
+    <h3 class="cssColor">
+        CSS is a behavioral specialist.
+    </h3>
+    <p style="color: #005D22;">
+        Html was all tags, and where to put them. 
+        <br>
+        CSS uses property - value tags to manipulate the tags that we create in html.
+        <br>
+        <br>
+        Select a design system to see the design component you selected get styled.
+    </p>
+    <br>
+    <form class="systems" id="systemID">
+        <div class="mdesignBox">
+            <div class="mdesignSelect">
+                <input type="radio" id="mdesign" name="sys" value="mdesign">
+                <label for="mdesign">Material Design</label><br>
+            </div>
+            <br>
+            <img src="material.png" width="200px" style="border-radius: 12px;">
+        </div>
+
+        <div class="bootBox">
+            <div class="bootSelect">
+                <input type="radio" id="bootstrap" name="sys" value="bootstrap">
+                <label for="bootstrap">Bootstrap</label><br>
+            </div>
+            <br>
+            <img src="boot.png" width="200px" style="border-radius: 12px;">
+        </div>
+
+        <div class="appleBox">
+            <div class="appleSelect">
+                <input type="radio" id="apple" name="sys" value="apple">
+                <label for="apple">Apple</label>
+            </div>
+            <br>
+            <img src="apple.png" width="200px" style="border-radius: 12px;">
+        </div>
+    </form>
+    <br>
+    <br>
+
+    <h3 style="text-align: center;">
+        The combination of the HTML and CSS will appear below!
+    </h3>
+    <div class="results" id="selected-color">
+
+        <div id="editorButton"><button class="noshowButton" id="ButtonCheck">
+                Button
+            </button>
+        </div>
+        <div class="noshowCard" id="CardCheck">
+            <!-- <img src="https://cdn.glitch.global/9f2fa8d6-7ed2-4d8c-87ae-6198b6611849/example.png?v=1715145124387"> -->
+            <h2>Card Title</h2>
+            <p>This is the description of the card. It gives you some basic details about the card.</p>
+            <button>Action</button>
+        </div>
+        <div id="editorDrop">
+            <select class="noshowDrop" id="DropCheck">
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+            </select>
+        </div>
+        <br>
+
+    </div>
+    <br>
+
+
+    <div id="wrapper">
+        <div class="colourSelect">
+            <p>
+                Change Background Color:
+            </p>
+            <input type="color" id="color-picker">
+        </div>
+        <div class="colourButton">
+            <p>
+                Change Button Color:
+            </p>
+            <input type="color" id="color-button">
+        </div>
+    </div>
+
+    <div class="pallete">
+        <button id="newPallete">New Pallete</button>
+        <div class="colours">
+            <div>
+                <h4 class="hex">#1234</h4>
+                <div class="colour"></div>
+            </div>
+            <div>
+                <h4 class="hex">#1234</h4>
+                <div class="colour"></div>
+            </div>
+            <div>
+                <h4 class="hex">#1234</h4>
+                <div class="colour"></div>
+            </div>
+            <div>
+                <h4 class="hex">#1234</h4>
+                <div class="colour"></div>
             </div>
         </div>
-      <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>

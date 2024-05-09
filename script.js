@@ -1,7 +1,9 @@
+// showCode();
+
 let firstDivContent = document.getElementById('CardCheck');
 let secondDivContent = document.getElementById('editor');
 let thirdDivContent = document.getElementById('editorButton');
-
+let fourthDivContent = document.getElementById('editorDrop');
 
 const component = document.querySelectorAll('input[name="comp"]');
 component.forEach((radio) => {
@@ -11,8 +13,8 @@ component.forEach((radio) => {
             showCard();
             removeButton();
             removeDrop();
-            
             secondDivContent.innerHTML = firstDivContent.innerHTML;
+            
             console.log(secondDivContent);
         } else if (this.value === "button") {
             showButton();
@@ -20,12 +22,14 @@ component.forEach((radio) => {
             removeDrop();
             console.log(this.value);
             secondDivContent.innerHTML = thirdDivContent.innerHTML;
-            console.log(secondDivContent);
+            console.log(thirdDivContent);
         } else if (this.value === "dropdown") {
             showDrop();
             removeButton();
             removeCard();
             console.log(this.value);
+            secondDivContent.innerHTML = fourthDivContent.innerHTML;
+            console.log(fourthDivContent);
         }
     })
 })
@@ -139,37 +143,71 @@ function NOappleSys() {
 
 
 
-
+//Background Picker
 const colorPicker = document.getElementById('color-picker');
 const selectedColor = document.getElementById('selected-color');
 
 
 async function fetchColorData() {
-  try {
-    const response = await fetch('https://www.thecolorapi.com/id?rgb=random');
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching color data:', error);
-  }
+    try {
+        const response = await fetch('https://www.thecolorapi.com/id?rgb=random');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching color data:', error);
+    }
 }
 
 async function updateColorPicker() {
-  const colorData = await fetchColorData();
-  if (colorData) {
-    const { hex } = colorData;
-    colorPicker.value = `#${hex.value}`;
-    selectedColor.style.backgroundColor = `#${hex.value}`;
-  }
+    const colorData = await fetchColorData();
+    if (colorData) {
+        const { hex } = colorData;
+        colorPicker.value = `#${hex.value}`;
+        selectedColor.style.backgroundColor = `#${hex.value}`;
+    }
 }
 
 colorPicker.addEventListener('change', async () => {
-  const colorValue = colorPicker.value;
-  selectedColor.style.backgroundColor = colorValue;
-  console.log('Selected color:', colorValue);
+    const colorValue = colorPicker.value;
+    selectedColor.style.backgroundColor = colorValue;
+    console.log('Selected color:', colorValue);
 });
 
 updateColorPicker();
+
+
+//ButtonColor
+const clrButton = document.getElementById('color-button');
+const selectButtonClr = document.getElementById('ButtonCheck');
+
+
+async function fetchColorData() {
+    try {
+        const response = await fetch('https://www.thecolorapi.com/id?rgb=random');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching color data:', error);
+    }
+}
+
+async function updateBtnPicker() {
+    const colorData = await fetchColorData();
+    if (colorData) {
+        const { hex } = colorData;
+        colorPicker.value = `#${hex.value}`;
+        selectButtonClr.style.backgroundColor = `#${hex.value}`;
+    }
+}
+
+clrButton.addEventListener('change', async () => {
+    const colorValue = clrButton.value;
+    selectButtonClr.style.backgroundColor = colorValue;
+    console.log('Selected color:', colorValue);
+});
+
+updateBtnPicker();
+
 
 
 const btn = document.querySelector('#newPallete');
@@ -179,8 +217,8 @@ const hex = document.querySelectorAll('.hex');
 btn.addEventListener('click', generateColours);
 
 function generateColours() {
-    for (let i=0; i<colour.length; i++){
-        const randomColor = Math.floor(Math.random()*123214).toString(16);
+    for (let i = 0; i < colour.length; i++) {
+        const randomColor = Math.floor(Math.random() * 123214).toString(16);
         colour[i].style.background = "#" + randomColor;
         colour[i].classList.add('fade-in');
         setTimeout(() => colour[i].classList.remove('fade-in'), 400);
@@ -189,3 +227,12 @@ function generateColours() {
 }
 
 generateColours();
+
+function showCode() {
+    const editor = CodeMirror.fromTextArea
+    (document.getElementById('editor'), {
+        mode: "xml",
+        theme: "3024-day",
+        lineNumbers: true,
+    });
+};
