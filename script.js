@@ -1,5 +1,5 @@
-            let firstDivContent = document.getElementById('CardCheck');
-            let secondDivContent = document.getElementById('editor');
+let firstDivContent = document.getElementById('CardCheck');
+let secondDivContent = document.getElementById('editor');
 let thirdDivContent = document.getElementById('editorButton');
 
 
