@@ -1,0 +1,357 @@
+body {
+    background-color: #F3EACB;
+    margin: 0% 20%;
+    font-family: "Work Sans", sans-serif;
+}
+
+p {
+    color: #092531;
+    font-size: 1.2em;
+}
+
+h1{
+    color: #104156; 
+    font-size: 4.2em;
+}
+
+h3{
+    margin-top: 12%;
+    color: #104156;
+    font-size: 1.8em;
+}
+
+h6{
+    color: #104156; 
+    font-size: 1em;
+}
+
+.components {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+.buttonBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    min-width: 80px;
+}
+
+.cardBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;   
+    min-width: 80px; 
+}
+
+.dropdownBox {
+    margin: 4%;
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;  
+}
+
+.buttonSelect {
+    display: flex;
+    align-items: center;
+}
+
+.cardSelect {
+    display: flex;
+    align-items: center;
+}
+
+.dropdownSelect {
+    display: flex;
+    align-items: center;
+}
+
+.systems {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.mdesignBox {
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px; 
+}
+
+.bootBox {
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;    
+}
+
+.appleBox {
+    display: flex;
+    align-items: left;
+    flex-direction: column; 
+    min-width: 80px;   
+}
+
+.mdesignSelect {
+    display: flex;
+    align-items: center;
+}
+
+.bootSelect {
+    display: flex;
+    align-items: center;
+}
+
+.appleSelect {
+    display: flex;
+    align-items: center;
+}
+
+#btn {
+    margin-left: 40px;
+}
+
+#crd {
+    max-width: 300px;
+    margin-left: 40px;
+}
+
+#cars {
+  margin-left: 40px;
+}
+
+.showButton {
+    display: flex;
+    width: 200px;
+  justify-content: center;
+}
+
+
+.showCard {
+    display: flex;
+    width: 400px;
+}
+
+.showDrop {
+    display: flex;
+    width: 200px;
+}
+
+.noshowButton {
+    display: none;
+}
+
+.noshowCard {
+    display: none;
+}
+
+.noshowDrop {
+    display: none;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12%;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.Material {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 40px;
+    background: var(--M3-sys-light-primary, #6750A4);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.Bootstrap {
+    flex-direction: column;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    background: var(---Status-Color-Danger, #DC3545);
+    color: #ffffff;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 2px 4px 5px 1px rgba(48, 48, 48, 0.2);
+}
+
+.Apple {
+    flex-direction: column;
+    padding: 13px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Default-SystemBlue-Dark, #0A84FF);
+    color: #ffffff;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    border: none;
+}
+
+.pallete body {
+    background-color: #f1f1f1;
+    min-height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.pallete button {
+    border: none;
+    padding: 12px 24px;
+    position: relative;
+    top: -40px;
+    border-radius: 12px;
+    background-color: #007bff;
+    color: #F3EACB;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pallete button:hover {
+    color: #F3EACB;
+    background-color: #1A23B2;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+
+.pallete {
+    background-color: #ffffff;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5em;
+    margin-bottom: 12vh;
+}
+
+.colours {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.colours > div {
+    width: 25%;
+}
+
+.colour{
+    background-color: #333333;
+    height: 20vh;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
+}
+
+
+@media screen and (max-width: 500px) {
+    body { padding: 2em; }
+    .pallete { height: initial;}
+    .colours { flex-direction: column; }
+    .colours > div { width: 100%; }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 12vh;
+}
+
+#bridge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 12vh 0vh;
+}
+
+.colourSelect {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.colourButton {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.htmlWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+textarea {
+    height: 15vh;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 2px #1A23B2;
+    background-color: #F3EACB;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+label {
+    font-size: 1.2em;
+    font-family: "Work-sans", sans-serif;
+    color: #092531;
+    font-weight: 300;
+}
+
+.htmlColor {
+    color: #0074D9;
+}
+
+.cssColor {
+    color: #00B140;
+}
+
